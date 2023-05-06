@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <link rel="icon" href="favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    
+    <title>Pokedex</title>
 </head>
 <body>
-    <img src="pokedex.png" alt="">
+
+    <main>
+        <img src="" 
+        alt="Imagem pokemon" class="pokemon__image">
+
+        <h1 class="pokemon__data">
+            <span class="pokemon__number"></span> -
+            <span class="pokemon__name"></span>
+        </h1>
+
+        <form class="form">
+            <input type="search"
+            class="input__search"
+            placeholder="Name or Number"
+            required>
+        </form>
+
+        <div class="buttons">
+            <button class="button prev">Prev &lt</button>
+            <button class="button next">Next &gt</button>
+        </div>
+
+        <img src="image/pokedex.png" alt="Pokedex" class="pokedex">
+    </main>
+
+    <script src="/JS/main.js"></script>
+    
 </body>
 </html>
