@@ -121,6 +121,7 @@ main{
     bottom: 23%;
     left: 47%;
     width: 60%;
+    max-width: 60%;
     transform: translate(-45%,10%);
     display: flex;
     gap: 50%;
