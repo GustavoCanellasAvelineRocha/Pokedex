@@ -142,7 +142,7 @@ main{
 
 @media (max-width: 411px){
     .buttons{
-        gap: 40%;
+        gap: 30%;
     }
 
     .types{
