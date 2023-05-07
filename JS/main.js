@@ -132,23 +132,4 @@ buttonNext.addEventListener('click', () =>{
     
 });
 
-const mediaQuery = window.matchMedia('(max-width: 400px)');
-
-function ChangeButtons() {
-  if (mediaQuery.matches) {
-    buttonNext.innerHTML = ">";
-  } else {
-    buttonNext.innerHTML = "next >";
-  }
-
-  if (mediaQuery.matches) {
-    buttonPrev.innerHTML = "<";
-  } else {
-    buttonPrev.innerHTML = "prev <";
-  }
-}
-
-mediaQuery.addListener(ChangeButtons);
-ChangeButtons();
-
 renderPokemon(searchPokemon);
