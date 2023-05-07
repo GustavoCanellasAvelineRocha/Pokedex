@@ -93,18 +93,22 @@ const renderPokemon = async (pokemon) =>{
         typeFirst.style.setProperty('background-color', pokemonColors['normal']);
         typeSecond.innerHTML='';
         typeSecond.style.setProperty('background-color', 'cyan');
+        searchPokemon = 0;
     }
 }
 
 buttonShiny.addEventListener('click', function() {
-    precionado = !precionado;
+    if(searchPokemon!=0){
+        precionado = !precionado;
 
-    if (precionado) {
-        pokemonImage.src = imagemshiny;
-        buttonShiny.classList.add('active');
-    } else {
-        pokemonImage.src = imagem;
-        buttonShiny.classList.remove('active');
+    
+        if (precionado) {
+            pokemonImage.src = imagemshiny;
+            buttonShiny.classList.add('active');
+        } else {
+            pokemonImage.src = imagem;
+            buttonShiny.classList.remove('active');
+        } 
     }
 });
 
@@ -116,7 +120,7 @@ form.addEventListener('submit', (event) =>{
 });
 
 buttonPrev.addEventListener('click', () =>{
-    if(searchPokemon==1);
+    if(searchPokemon<=1);
     else{
         searchPokemon--;
         renderPokemon(searchPokemon);
@@ -132,17 +136,4 @@ buttonNext.addEventListener('click', () =>{
     
 });
 
-function alterarTexto() {
-    const larguraDaJanela = window.innerWidth;
-  
-    if (larguraDaJanela <= 428) {
-      buttonNext.innerHTML = '>'
-      buttonPrev.innerHTML = '<'
-    } else {
-        buttonNext.innerHTML = 'Next >'
-        buttonPrev.innerHTML = '< Prev'
-    }
-  }
-
-window.addEventListener("resize", alterarTexto);
 renderPokemon(searchPokemon);

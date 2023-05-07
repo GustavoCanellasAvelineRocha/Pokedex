@@ -22,7 +22,7 @@ main{
     max-width: 425px;
 }
 
-.pokemon{
+.pokemon-display{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@ main{
     background-color: blue;
     padding: 2% 15%;
     border: 4px solid #aaa;
-    border-radius: 15px 50px;   
+    border-radius: 50px;   
 }
 
 .pokemon__image{
