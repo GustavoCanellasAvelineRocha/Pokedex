@@ -81,7 +81,7 @@ main{
 .shiny-button{
     position: absolute;
     display: inline-block;
-    font-size: clamp(10px,5vw,25px);
+    font-size: clamp(15px,5vw,25px);
     color: black;
     background-color: transparent;
     border: none;
