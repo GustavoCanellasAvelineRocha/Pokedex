@@ -131,7 +131,7 @@ main{
     width: 50%;
     background-color: blue;
     border-radius: 10px;
-    font-size: clamp(1px,5vw,15px);
+    font-size: clamp(1px,4vw,15px);
     color: rgb(255, 240, 240);
     box-shadow: 0px 3px 0 #222, 0px 5px 0 #000;
     cursor: pointer;
