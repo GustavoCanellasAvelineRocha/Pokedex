@@ -14,13 +14,13 @@
 <body>
 
     <main>
-        <img src="" 
-        alt="Imagem pokemon" class="pokemon__image">
-
-        <h1 class="pokemon__data">
-            <span class="pokemon__number"></span> -
-            <span class="pokemon__name"></span>
-        </h1>
+        <section class="pokemon">
+            <h1 class="pokemon__data">
+                <span class="pokemon__number"></span> -
+                <span class="pokemon__name"></span>
+            </h1>
+            <img src="" alt="Imagem pokemon" class="pokemon__image">
+        </section>
 
         <form class="form">
             <input type="search"
@@ -28,6 +28,15 @@
             placeholder="Name or Number"
             required>
         </form>
+
+        <button class="shiny-button">
+            ★
+        </button>
+
+        <div class="types">
+            <h2 class="types__box type__first" >?</h2>
+            <h2 class="types__box type__second">?</h2>
+        </div>
 
         <div class="buttons">
             <button class="button prev">Prev &lt</button>
