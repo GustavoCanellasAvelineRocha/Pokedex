@@ -132,4 +132,17 @@ buttonNext.addEventListener('click', () =>{
     
 });
 
+function alterarTexto() {
+    const larguraDaJanela = window.innerWidth;
+  
+    if (larguraDaJanela <= 411) {
+      buttonNext.innerHTML = '>'
+      buttonPrev.innerHTML = '<'
+    } else {
+        buttonNext.innerHTML = 'Next >'
+        buttonPrev.innerHTML = '< Prev'
+    }
+  }
+  
+window.addEventListener("resize", alterarTexto);
 renderPokemon(searchPokemon);
