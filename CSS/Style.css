@@ -141,7 +141,7 @@ main{
     box-shadow: inset 0px 3px 0 #222;
 }
 
-@media (max-width: 400px){
+@media (max-width: 428px){
 
     .buttons{
         gap: 30%;

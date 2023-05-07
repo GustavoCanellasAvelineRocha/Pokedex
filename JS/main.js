@@ -135,7 +135,7 @@ buttonNext.addEventListener('click', () =>{
 function alterarTexto() {
     const larguraDaJanela = window.innerWidth;
   
-    if (larguraDaJanela <= 411) {
+    if (larguraDaJanela <= 428) {
       buttonNext.innerHTML = '>'
       buttonPrev.innerHTML = '<'
     } else {
@@ -143,6 +143,6 @@ function alterarTexto() {
         buttonPrev.innerHTML = '< Prev'
     }
   }
-  
+
 window.addEventListener("resize", alterarTexto);
 renderPokemon(searchPokemon);
