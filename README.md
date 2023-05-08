@@ -16,3 +16,7 @@ A base lógica do projeto foi espelhada no vídeo citado acima, porém adicionei
 </ul>
 
 Por fim, adorei realizar esse projeto e fiquei satisfeito com o resultado! Abaixo, links para ver o resultado do projeto:
+
+https://pokedex-blush-two.vercel.app/
+
+https://gustavocanellasavelinerocha.github.io/Pokedex/
