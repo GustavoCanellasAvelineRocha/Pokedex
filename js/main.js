@@ -120,7 +120,10 @@ form.addEventListener('submit', (event) =>{
 });
 
 buttonPrev.addEventListener('click', () =>{
-    if(searchPokemon<=1);
+    if(searchPokemon == 0 || searchPokemon == 1){
+        searchPokemon=649;
+        renderPokemon(searchPokemon);
+    }
     else{
         searchPokemon--;
         renderPokemon(searchPokemon);
@@ -128,12 +131,14 @@ buttonPrev.addEventListener('click', () =>{
 });
 
 buttonNext.addEventListener('click', () =>{
-    if(searchPokemon>650);
+    if(searchPokemon==649){
+        searchPokemon=1;
+        renderPokemon(searchPokemon);
+    }
     else{
         searchPokemon++;
         renderPokemon(searchPokemon);
     }
-    
 });
 
 renderPokemon(searchPokemon);
